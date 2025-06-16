@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="April">
+    <meta name="description" content="Dave Gray's HTML project example.">
+    <title>Contact Us - LTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="/10_lesson/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/10_lesson/#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="/10_lesson/#about">About LTS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="form">
+            <h2>Contact Form</h2>
+            <section>
+                <form action="https://httpbin.org/get" method="post">
+                    <fieldset>
+                        <legend>Get In Touch</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="ilove@tacos.com" required>
+                        </p>
+                        <p>
+                            <label for="message">Your Message:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="40" rows="10" placeholder="Type your message here."></textarea>
+                        </p>
+                    </fieldset>
+
+                    <button type="submit">Send</button>
+                    <button type="reset">Cancel</button>
+                </form>
+            </section>
+
+            <section>
+                <figure>
+                    <img src="img/tacos_close_up_400x260.png" alt="Tacos side by side." title="Our crunchy tacos" width="400" height="260">
+                    <figcaption>Our Crunchy Tacos.</figcaption>
+                </figure>
+                <hr>
+            </section>
+
+        </article>
+        <br>
+        <article id="location">
+            <h2>Find Us</h2>
+            <section>
+                <address>
+                    555 Taco Temptation Lane, Suite T<br>
+                    Kansas City, MO 55555-5555
+                    <br><br>
+                    Phone: <a href="tel:+">555-555-5555</a>
+                </address>
+            </section>
+
+            <section>
+                <br><br>
+                <a href="#">Back to Top</a>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            Copyright &copy; The Little Taco Shop
+        </p>
+    </footer>
+</body>
+</html>
